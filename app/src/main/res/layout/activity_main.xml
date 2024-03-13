@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toTopOf="@id/loginH1"
+        app:layout_constraintEnd_toStartOf="@id/loginV2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@id/loginV1"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailET"
+        android:hint="@string/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/loginV1"
+        app:layout_constraintEnd_toStartOf="@id/loginV2"
+        app:layout_constraintTop_toBottomOf="@+id/loginH1"
+        app:layout_constraintBottom_toTopOf="@id/passwordET"
+        />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/passwordET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        app:layout_constraintStart_toEndOf="@id/loginV1"
+        app:layout_constraintEnd_toStartOf="@id/loginV2"
+        app:layout_constraintTop_toBottomOf="@+id/emailET"
+        app:layout_constraintBottom_toTopOf="@id/loginBtn"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciar_sesion"
+        app:layout_constraintBottom_toBottomOf="@id/loginH2"
+        app:layout_constraintStart_toEndOf="@id/loginV1"
+        app:layout_constraintEnd_toStartOf="@id/loginV2"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

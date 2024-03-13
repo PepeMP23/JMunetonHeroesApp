@@ -1,0 +1,20 @@
+package com.example.heroesapp.models
+
+data class Hero(val id: Int, val name: String, val description: String, val image: String, val publisherId:Int){
+    companion object {
+        val heroes = mutableListOf<Hero>(
+            // Marvel
+            Hero(1, "Spider-Man", "El Hombre Araña, alias Peter Parker, es un superhéroe que posee habilidades arácnidas después de ser mordido por una araña radiactiva.", "https://media.glamour.mx/photos/61bc9a347d4c19a8978ab2c1/1:1/w_3000,h_3000,c_limit/Spider%20Man%202.jpg", 1),
+            Hero(2, "Iron Man", "Tony Stark, conocido como Iron Man, es un genio multimillonario que utiliza su inteligencia para construir poderosas armaduras y luchar contra el crimen.", "https://playcontestofchampions.com/wp-content/uploads/2021/11/champion-iron-man-infinity-war-720x720.jpg", 1),
+            Hero(3, "Captain America", "Steve Rogers, el Capitán América, es un super soldado que lucha por la justicia y los ideales americanos con su escudo indestructible.", "https://img.asmedia.epimg.net/resizer/v2/QODR7WPXE5MZFHULFKKLZ6IIXY.jpg?auth=98235374a21d659603f2f62319535d92f6b99c280f959c6e9b4dbf90df7ac197&width=1200&height=1200&smart=true", 1),
+            Hero(4, "Black Widow", "Natasha Romanoff, la Viuda Negra, es una espía y asesina entrenada que combate el crimen utilizando sus habilidades de combate y astucia.", "https://tooys.mx/media/catalog/product/cache/39c7ff5a74bd9fa282a021db605b774d/b/l/black-widow_marvel_avengers-endgame-hot-toys-14.jpg", 1),
+            Hero(5, "Thor", "Thor es el dios del trueno y príncipe de Asgard. Posee un martillo encantado, Mjolnir, que le otorga poderes sobrenaturales.", "https://i.guim.co.uk/img/media/d4646ec3a06383f12e311d758dc7dce9f0290cca/2306_230_3742_2245/master/3742.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=cc2753765db7f0f93fda02e9550dce1d", 1),
+            // DC Comics
+            Hero(6, "Superman", "Clark Kent, también conocido como Superman, es un alienígena con superpoderes, incluida la fuerza sobrehumana, la visión de rayos X y la capacidad de volar.", "https://cadenaser.com/resizer/Cskhq4sqlJxQ2fUX-H5_bQ2GSjs=/990x990/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/OZRTFH56RRB27N5BYZX56WPERU.jpg", 2),
+            Hero(7, "Batman", "Bruce Wayne, el Caballero de la Noche, es un millonario que se convierte en Batman para luchar contra el crimen en Gotham City con su inteligencia y habilidades físicas.", "https://coolturize.com/wp-content/uploads/batman3.png", 2),
+            Hero(8, "Wonder Woman", "Diana Prince, conocida como Wonder Woman, es una guerrera amazona con habilidades divinas que lucha por la paz y la justicia en el mundo.", "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9098ec89-c1d3-4b61-996d-33852b79c648/dge8hp2-a0c26146-8231-4023-b5fb-7fda5947960a.jpg/v1/fill/w_1920,h_1920,q_75,strp/wonder_woman__portrait__by_jfsgallery_dge8hp2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzkwOThlYzg5LWMxZDMtNGI2MS05OTZkLTMzODUyYjc5YzY0OFwvZGdlOGhwMi1hMGMyNjE0Ni04MjMxLTQwMjMtYjVmYi03ZmRhNTk0Nzk2MGEuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.7CchAGL_Vib4fazLk6MAQL8bjRXGrN8FZgeCL3WVUfQ", 2),
+            Hero(9, "The Flash", "Barry Allen, The Flash, posee supervelocidad gracias a un accidente con un rayo. Utiliza sus poderes para proteger Central City y el multiverso.", "https://cdn.vox-cdn.com/thumbor/rjmkSIKvPjKycJWQSoH8PjYu0Dg=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24684984/FLA905b_0144r.jpeg", 2),
+            Hero(10, "Aquaman", "Arthur Curry, también conocido como Aquaman, es el rey de Atlantis con la capacidad de comunicarse con criaturas marinas y posee fuerza y resistencia sobrehumanas.", "https://tooys.mx/media/catalog/product/cache/39c7ff5a74bd9fa282a021db605b774d/a/q/aquaman-maquette-estatua-por-tweerhead-00.jpg", 2)
+        )
+    }
+}

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HeroesApp</string>
+    <string name="iniciar_sesion">iniciar_sesion</string>
+    <string name="password">password</string>
+    <string name="email">correo_electronico</string>
+    <string name="heroes_list">Lista de heroes</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="hero_name">Hero name</string>
+    <string name="hero_name_detail">Heroe</string>
+    <string name="hero_description">Hero description</string>
+    <string name="publisher_name_title">publisher_name_title</string>
+    <string name="publisher_name">nombre publisher</string>
+    <string name="hola_jose">hola_jose</string>
+    <string name="publisher_title">Publishers</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="heroes_title">heroes_title</string>
+    <string name="heroes">Heroes</string>
+    <string name="welcome_user">Hola Jose</string>
+</resources>
